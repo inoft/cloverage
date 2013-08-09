@@ -15,4 +15,13 @@
                  [org.clojure/tools.logging "0.2.3"]
                  [org.clojure/data.xml "0.0.7"]
                  [bultitude "0.2.0"]
-                 [slingshot "0.10.3"]])
+                 [slingshot "0.10.3"]]
+  :deploy-repositories [["releases" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/releases")
+                                     :username "john"
+                                     :password "doh"
+                                     :sign-releases false}
+                       "snapshots" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/snapshots")
+                                      :username "john"
+                                      :password "doh"
+                                      :sign-releases false}
+                      ]])
