@@ -6,7 +6,7 @@
   (map name (mapcat blt/namespaces-in-dir dirs)))
 
 (defn get-lib-version []
-  (or (System/getenv "CLOVERAGE_VERSION") "RELEASE"))
+  (or (System/getenv "CLOVERAGE_VERSION") "1.0.4-SNAPSHOT"))
 
 (defn cloverage
   "Run code coverage on the project.
@@ -17,7 +17,7 @@
   (let [source-namespaces (ns-names-for-dirs (:source-paths project))
         test-namespace    (ns-names-for-dirs (:test-paths project))]
     (apply run/run (update-in project [:dependencies]
-                              conj    ['cloverage (get-lib-version)])
+                              conj    ['inoft-cloverage (get-lib-version)])
            "-m" "cloverage.coverage"
            (concat (mapcat  #(list "-x" %) test-namespace)
                    args
