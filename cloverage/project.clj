@@ -1,4 +1,4 @@
-(defproject inoft/cloverage "1.0.4-SNAPSHOT"
+(defproject inoft/cloverage "1.0.5-SNAPSHOT"
   :description "Form-level test coverage for clojure."
   :url "https://www.github.com/inoft/cloverage"
   :scm {:name "git"
