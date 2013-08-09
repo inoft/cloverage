@@ -1,9 +1,9 @@
 (defproject inoft-lein-cloverage "1.0.4-SNAPSHOT"
   :description "Lein plugin for cloverage"
-  :url "https://github.com/lshift/cloverage"
+  :url "https://github.com/inoft/cloverage"
   :scm {:name "git"
         :dir  ".."
-        :url  "https://www.github.com/lshift/cloverage"
+        :url  "https://www.github.com/inoft/cloverage"
         :tag  "HEAD"}
   :license {:name "Eclipse Public License - v 1.0"
             :url "http://www.eclipse.org/legal/epl-v10.html"

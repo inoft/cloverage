@@ -1,9 +1,9 @@
-(defproject inoft-cloverage "1.0.4"
+(defproject inoft-cloverage "1.0.4-SNAPSHOT"
   :description "Form-level test coverage for clojure."
   :url "https://www.github.com/lshift/cloverage"
   :scm {:name "git"
         :dir  ".."
-        :url  "https://www.github.com/lshift/cloverage"
+        :url  "https://www.github.com/inoft/cloverage"
         :tag  "HEAD"}
   :main cloverage.coverage
   :license {:name "Eclipse Public License - v 1.0"
