@@ -1,4 +1,4 @@
-(defproject inoft-cloverage "1.0.4-SNAPSHOT"
+(defproject inoft-cloverage "1.0.4"
   :description "Form-level test coverage for clojure."
   :url "https://www.github.com/lshift/cloverage"
   :scm {:name "git"
@@ -19,9 +19,9 @@
   :deploy-repositories [["releases" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/releases")
                                      :username "john"
                                      :password "doh"
-                                     :sign-releases false}
-                       "snapshots" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/snapshots")
+                                     :sign-releases false}]
+                       ["snapshots" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/snapshots")
                                       :username "john"
                                       :password "doh"
-                                      :sign-releases false}
-                      ]])
+                                      :sign-releases false}]
+                      ])
