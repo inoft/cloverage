@@ -10,6 +10,7 @@
             :comments "same as Clojure"}
   :plugins
     [[lein-sub "0.2.4"]
+     [lein-release "1.0.4"]
      ]
   :sub
     ["cloverage"
