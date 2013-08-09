@@ -1,4 +1,4 @@
-(defproject inoft/cloverage-parent "1.0.4"
+(defproject inoft/cloverage-parent "1.0.4-SNAPSHOT"
   :description "Parent project for cloverage and lein-cloverage."
   :url "http://github.com/inoft/cloverage"
   :scm {:name "git"
