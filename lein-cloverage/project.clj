@@ -11,6 +11,9 @@
             :comments "same as Clojure"}
   :min-lein-version "2.0.0"
   :eval-in-leiningen true
+  :plugins [[lein-release "1.0.4"]]
+  :lein-release {:scm :git
+                 :deploy-via :lein-deploy}
   :deploy-repositories [["releases" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/releases")
                                      :username "john"
                                      :password "doh"

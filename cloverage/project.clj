@@ -16,6 +16,9 @@
                  [org.clojure/data.xml "0.0.7"]
                  [bultitude "0.2.0"]
                  [slingshot "0.10.3"]]
+  :plugins [[lein-release "1.0.4"]]
+  :lein-release {:scm :git
+                 :deploy-via :lein-deploy}
   :deploy-repositories [["releases" {:url ~(str "file:///" (System/getenv "INOFT_PUBLIC_REPO_PATH") "/releases")
                                      :username "john"
                                      :password "doh"
